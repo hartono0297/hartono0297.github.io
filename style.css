@@ -54,9 +54,7 @@ header {
 .navbar{
     max-width: 60%;
     margin: 10px auto;
-
     margin-top: -20px;
-
 }
 
 .navbar ul { 
@@ -87,7 +85,7 @@ header {
 
 /* profile */
 .profile {
-    max-width: 50%;
+    max-width: 60%;
     padding: 5rem 5rem 5rem 5rem;
     margin: 5rem auto;
     display: grid;
@@ -155,6 +153,7 @@ header {
 }
 
 
+
 /* hobby */
 .hobby{
     max-width: 50%;
@@ -164,7 +163,7 @@ header {
 }
 
 .hobby h2{
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .konten {
@@ -202,8 +201,7 @@ footer {
     color: white;
     margin-bottom:-30px;
     text-align: center;
-    padding: 1%;
-    
+    padding: 1%;   
 }
 
 footer h2{
@@ -251,8 +249,6 @@ footer .sosmed a:hover{
         padding: 40vh 40vh 40vh 25vh;
     }
 
-
-
     .navbar {
         max-width: 100%;
     }
@@ -269,8 +265,14 @@ footer .sosmed a:hover{
     max-width: 100%;
     display: block;
     }
+
     .profile img{
-        width: 30%;
+        width: 100%;
+    }
+
+    footer .sosmed{
+       
+        max-width: 100%;
     }
 }
 
@@ -285,5 +287,11 @@ footer .sosmed a:hover{
 
     .konten .imgs{
     display: block;
+    }
+}
+
+@media(max-width:1200px){
+    .profile {
+        max-width: 80%;
     }
 }
