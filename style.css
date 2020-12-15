@@ -5,8 +5,12 @@
     box-sizing: border-box;
     line-height: 1.5;
     scroll-behavior: smooth;
-}
+    
+}   
 
+html, body{
+    overflow-x: initial;
+}
 a {
     text-decoration: none;
     color: black;
@@ -48,7 +52,10 @@ header {
 
 
 /* container */
+.container {
 
+    
+}
 
 /* nav */
 .navbar{
@@ -74,7 +81,7 @@ header {
 
 .sticky{
   position: fixed;
-  top: 0;
+  top: 0;  
   width: 60%;
   z-index: 999;
   transition: 1s;
@@ -240,9 +247,17 @@ footer .sosmed a:hover{
 
 /* responsive */
 
-@media(max-width: 760px){
+@media(max-width: 480px){
     .konten img{
-        width: 50%;
+        width: 100%;
+    }
+
+    .konten .imgs{
+        padding: 20px 80px;
+    }
+
+    html, body{
+        overflow-x: hidden;
     }
 
     header{
@@ -255,6 +270,10 @@ footer .sosmed a:hover{
 
     .sticky {
         width: 100%;
+    }
+
+    #abilities {
+        padding: 1rem 0 1rem 0;
     }
 
     .hobby{
@@ -271,15 +290,11 @@ footer .sosmed a:hover{
     }
 
     footer .sosmed{
-       
         max-width: 100%;
     }
 }
 
 @media(max-width: 940px){
-    #abilities {
-        padding: 1rem 5rem 1rem 5rem;
-    }
 
     #abilities .cont-abilities {
         width: 100%;
@@ -294,4 +309,6 @@ footer .sosmed a:hover{
     .profile {
         max-width: 80%;
     }
+
+    
 }
